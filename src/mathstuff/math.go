@@ -13,7 +13,7 @@ func Average(numbers []float64) float64 {
 		sum += num
 	}
 	avg := ((sum) / float64(len(numbers)))
-	return math.Ceil(avg*100) / 100
+	return math.Round(avg*100) / 100
 }
 
 func Median(numbers []float64) float64 {
@@ -26,7 +26,7 @@ func Median(numbers []float64) float64 {
 	}
 
 	median := (numbers[middleNumber-1] + numbers[middleNumber]) / 2
-	return math.Ceil(median*100) / 100
+	return math.Round(median*100) / 100
 }
 
 func Mode(numbers []float64) []float64 {
@@ -42,9 +42,9 @@ func Mode(numbers []float64) []float64 {
 	for value, count := range valueMap {
 		if currCount < count {
 			currCount = count
-			mode = []float64{math.Ceil(value*100) / 100}
+			mode = []float64{math.Round(value*100) / 100}
 		} else if currCount == count {
-			mode = append(mode, math.Ceil(value*100)/100)
+			mode = append(mode, math.Round(value*100)/100)
 		}
 	}
 	sort.Float64s(mode)
