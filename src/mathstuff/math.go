@@ -2,6 +2,7 @@ package mathstuff
 
 import (
 	"log"
+	"math"
 	"sort"
 )
 
@@ -11,7 +12,8 @@ func Average(numbers []float64) float64 {
 	for _, num := range numbers {
 		sum += num
 	}
-	return ((sum) / float64(len(numbers)))
+	avg := ((sum) / float64(len(numbers)))
+	return math.Ceil(avg*100) / 100
 }
 
 func Median(numbers []float64) float64 {
@@ -23,7 +25,8 @@ func Median(numbers []float64) float64 {
 		return numbers[middleNumber]
 	}
 
-	return (numbers[middleNumber-1] + numbers[middleNumber]) / 2
+	median := (numbers[middleNumber-1] + numbers[middleNumber]) / 2
+	return math.Ceil(median*100) / 100
 }
 
 func Mode(numbers []float64) []float64 {
@@ -39,9 +42,9 @@ func Mode(numbers []float64) []float64 {
 	for value, count := range valueMap {
 		if currCount < count {
 			currCount = count
-			mode = []float64{value}
+			mode = []float64{math.Ceil(value*100) / 100}
 		} else if currCount == count {
-			mode = append(mode, value)
+			mode = append(mode, math.Ceil(value*100)/100)
 		}
 	}
 	sort.Float64s(mode)
