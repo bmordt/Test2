@@ -73,5 +73,10 @@
     "id": "b",
     "timestamp": 1510128115,
     "temperature": 3.88
+  },
+  {
+    "id": "blah",
+    "timestamp": 1510128115,
+    "temperature": 3.88
   }
 ]
