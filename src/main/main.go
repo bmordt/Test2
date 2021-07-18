@@ -20,6 +20,8 @@ func worker(id string, jobs <-chan []float64, results chan<- objects.FridgeResul
 		Median:  mathstuff.Median(numbers),
 		Mode:    mathstuff.Mode(numbers),
 	}
+
+	//test commit 1
 }
 
 func main() {
