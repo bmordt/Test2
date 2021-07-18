@@ -22,6 +22,7 @@ func worker(id string, jobs <-chan []float64, results chan<- objects.FridgeResul
 	}
 
 	//test commit 1
+	//test commit blah 2
 }
 
 func main() {
