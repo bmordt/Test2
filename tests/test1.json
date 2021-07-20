@@ -65,6 +65,11 @@
     "temperature": 3.53
   },
   {
+    "id": "a",
+    "timestamp": 1509493646,
+    "temperature": 3.52
+  },
+  {
     "id": "b",
     "timestamp": 1509493647,
     "temperature": 4.15
