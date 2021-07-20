@@ -45,6 +45,11 @@
     "temperature": 3.96
   },
   {
+    "id": "c",
+    "timestamp": 1509493845,
+    "temperature": 3.96
+  },
+  {
     "id": "a",
     "timestamp": 1509493645,
     "temperature": 4.63
